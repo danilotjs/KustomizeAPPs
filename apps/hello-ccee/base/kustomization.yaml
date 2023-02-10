@@ -1,3 +1,4 @@
 namespace: hello-ccee
 resources:
 - hello-deployment.yaml
+- service.yaml
