@@ -23,5 +23,5 @@ spec:
         name: hello-ccee
         env:
         - name: AMBIENTE
-          value: "dev"
+          value: "prd"
         resources: {}
