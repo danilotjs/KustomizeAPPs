@@ -1,9 +1,22 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  labels:
+    app: hello-ccee
   name: hello-ccee
+  namespace: hello-ccee
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-ccee
+  strategy: {}
   template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: hello-ccee
     spec:
       containers:
       - image: quay.energia.org.br/ccee/hello-ccee-token:df985931
@@ -11,3 +24,4 @@ spec:
         env:
         - name: AMBIENTE
           value: "dev"
+        resources: {}
