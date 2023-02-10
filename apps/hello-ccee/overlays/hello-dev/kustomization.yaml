@@ -2,8 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: hello-dev
 resources:
-- ../../base/hello-deployment.yaml
+- ../../base/
 - hello-dev-ns.yaml
+
 patchesJson6902:
   - target:
       version: v1
