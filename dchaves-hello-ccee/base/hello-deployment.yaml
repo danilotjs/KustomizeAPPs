@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: hello-ccee
+  name: dchaves-hello-ccee
+spec:
+  template:
+    spec:
+      containers:
+      - image: quay.energia.org.br/ccee/hello-ccee-token:df985931
+        name: hello-ccee
+        env:
+        - name: AMBIENTE
+          value: "dev"
