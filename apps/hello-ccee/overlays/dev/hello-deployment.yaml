@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: hello-ccee
-  name: dchaves-hello-ccee
+  name: hello-ccee
 spec:
   template:
     spec:
